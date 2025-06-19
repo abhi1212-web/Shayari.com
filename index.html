@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shyari Jo Nikale Dil Se</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Shyari Jo Nikale Dil Se</h1>
+    <button id="themeToggle">Toggle Theme</button>
+  </header>
+
+  <main>
+    <section id="submit-section">
+      <h2>Submit Your Shayari</h2>
+      <form id="shayariForm">
+        <input type="text" id="author" placeholder="Your Name" required />
+        <textarea id="text" rows="4" placeholder="Write your shayari here..." required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="all-shayaris">
+      <h2>All Shayaris</h2>
+      <div id="shayariList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Shyari Jo Nikale Dil Se</p>
+  </footer>
+</body>
+</html>
+

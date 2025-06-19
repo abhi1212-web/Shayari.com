@@ -1,0 +1,98 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --accent-color: #d62828;
+  --card-bg: #f9f9f9;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --accent-color: #ef476f;
+  --card-bg: #1e1e1e;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+header {
+  padding: 1rem;
+  background: var(--accent-color);
+  color: white;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+#themeToggle {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: white;
+  color: var(--accent-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  padding: 1.5rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 0.8rem;
+  background: var(--accent-color);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#shayariList {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.shayari-card {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.shayari-card p {
+  margin: 0.5rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
